@@ -15,4 +15,4 @@ jobs:
         shell: bash
 
       - run: echo "api = ${{ github.api_url }}"
-      - run: echo "apit-env = ${{ env.GITHUB_ACTOR_ID }}"
+      - run: echo "apit-env = ${{ env.ACTOR_ID }}"
