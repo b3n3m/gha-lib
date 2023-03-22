@@ -13,3 +13,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
+
+      - run: echo "api = ${{ github.api_url }}"
