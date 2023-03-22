@@ -7,8 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: foo
-        uses: b3n3m /hello-world-composite-action@v6
+        uses: b3n3m /hello-world-composite-action@v7
         with:
           who-to-greet: 'Laxsi'
+          token: ${{ secrets.GITHUB_TOKEN }}
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
