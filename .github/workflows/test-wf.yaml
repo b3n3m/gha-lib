@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: foo
-        uses: b3n3m /hello-world-composite-action@main
+        uses: b3n3m /hello-world-composite-action/inside-action@main
         with:
           who-to-greet: 'Lurch'
           token: ${{ secrets.GITHUB_TOKEN }}
