@@ -1,6 +1,6 @@
 name: test-wf.yaml
 
-on: [push, dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   hello_world_job:
