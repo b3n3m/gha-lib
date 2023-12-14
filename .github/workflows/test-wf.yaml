@@ -1,4 +1,4 @@
-on: [push]
+on: [push, dispatch]
 
 jobs:
   hello_world_job:
@@ -9,7 +9,7 @@ jobs:
       - id: foo
         uses: b3n3m /hello-world-composite-action@v7
         with:
-          who-to-greet: 'Laxsi'
+          who-to-greet: 'Lurch'
           token: ${{ secrets.GITHUB_TOKEN }}
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
